@@ -1,0 +1,183 @@
+{
+  "seed": 42,
+  "selection": "maximum attack-class F1 on a fixed stratified 20% holdout of KDDTrain+",
+  "threshold": "unmodified estimator default; no test-set threshold tuning",
+  "selected_model": "XGBoost",
+  "fit_rows": 100778,
+  "validation_rows": 25195,
+  "final_training_rows": 125973,
+  "official_test_rows": 22544,
+  "original_features": 41,
+  "engineered_features": 2,
+  "validation_results": [
+    {
+      "model": "Majority baseline",
+      "accuracy": 0.5345901964675531,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "false_positive_rate": 0.0,
+      "confusion_matrix": [
+        [
+          13469,
+          0
+        ],
+        [
+          11726,
+          0
+        ]
+      ],
+      "fit_and_evaluate_seconds": 1.805
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9717404246874379,
+      "precision": 0.9761369531385095,
+      "recall": 0.9628176701347433,
+      "f1": 0.9694315644856603,
+      "roc_auc": 0.9963881597361548,
+      "false_positive_rate": 0.020491498997698417,
+      "confusion_matrix": [
+        [
+          13193,
+          276
+        ],
+        [
+          436,
+          11290
+        ]
+      ],
+      "fit_and_evaluate_seconds": 4.962
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9991665012899384,
+      "precision": 0.9994879235299138,
+      "recall": 0.9987207914037183,
+      "f1": 0.9991042102120036,
+      "roc_auc": 0.9999953430944016,
+      "false_positive_rate": 0.000445467369515183,
+      "confusion_matrix": [
+        [
+          13463,
+          6
+        ],
+        [
+          15,
+          11711
+        ]
+      ],
+      "fit_and_evaluate_seconds": 10.605
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.9968247668188133,
+      "precision": 0.9970974901826873,
+      "recall": 0.9960770936380693,
+      "f1": 0.9965870307167235,
+      "roc_auc": 0.9995772061572663,
+      "false_positive_rate": 0.0025243150939193706,
+      "confusion_matrix": [
+        [
+          13435,
+          34
+        ],
+        [
+          46,
+          11680
+        ]
+      ],
+      "fit_and_evaluate_seconds": 22.409
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.9993252629489978,
+      "precision": 0.9992325402916347,
+      "recall": 0.9993177554153164,
+      "f1": 0.9992751460367544,
+      "roc_auc": 0.9999934087848703,
+      "false_positive_rate": 0.0006682010542727745,
+      "confusion_matrix": [
+        [
+          13460,
+          9
+        ],
+        [
+          8,
+          11718
+        ]
+      ],
+      "fit_and_evaluate_seconds": 6.241
+    },
+    {
+      "model": "Linear SVM",
+      "accuracy": 0.9725342329827347,
+      "precision": 0.9769190871369294,
+      "recall": 0.9637557564386833,
+      "f1": 0.9702927792564608,
+      "roc_auc": 0.996119141918258,
+      "false_positive_rate": 0.019823297943425643,
+      "confusion_matrix": [
+        [
+          13202,
+          267
+        ],
+        [
+          425,
+          11301
+        ]
+      ],
+      "fit_and_evaluate_seconds": 13.773
+    }
+  ],
+  "official_test": {
+    "accuracy": 0.7944464158977999,
+    "precision": 0.9688893972320713,
+    "recall": 0.6600950674043482,
+    "f1": 0.7852243233222098,
+    "roc_auc": 0.9655251608226759,
+    "false_positive_rate": 0.028009473792606324,
+    "confusion_matrix": [
+      [
+        9439,
+        272
+      ],
+      [
+        4362,
+        8471
+      ]
+    ]
+  },
+  "exact_feature_overlap_test_rows": 664,
+  "official_test_without_exact_training_feature_matches": {
+    "accuracy": 0.7904478976234004,
+    "precision": 0.9690130535561791,
+    "recall": 0.647140296561838,
+    "f1": 0.7760246201944214,
+    "roc_auc": 0.9656676746388784,
+    "false_positive_rate": 0.02644180720383094,
+    "confusion_matrix": [
+      [
+        9352,
+        254
+      ],
+      [
+        4331,
+        7943
+      ]
+    ]
+  },
+  "data_sha256": {
+    "KDDTrain+.txt": "1b86d2f957b33082081bba410fe129b475efebcc13c9014c3f447c8271aadf95",
+    "KDDTest+.txt": "fa46b0935342616aa83b7c2578db355b6a7aaabbc492248172c7a1e8b7ab8f84"
+  },
+  "versions": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.5.3"
+  }
+}

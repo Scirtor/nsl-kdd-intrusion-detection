@@ -1,0 +1,10 @@
+{
+  "KDDTrain+.txt": {
+    "url": "https://raw.githubusercontent.com/defcom17/NSL_KDD/27bbbdf5c5cccf9970b8b6037a0f19dc09c5a0a9/KDDTrain%2B.txt",
+    "sha256": "1b86d2f957b33082081bba410fe129b475efebcc13c9014c3f447c8271aadf95"
+  },
+  "KDDTest+.txt": {
+    "url": "https://raw.githubusercontent.com/defcom17/NSL_KDD/27bbbdf5c5cccf9970b8b6037a0f19dc09c5a0a9/KDDTest%2B.txt",
+    "sha256": "fa46b0935342616aa83b7c2578db355b6a7aaabbc492248172c7a1e8b7ab8f84"
+  }
+}

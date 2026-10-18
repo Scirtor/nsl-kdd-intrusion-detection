@@ -1,0 +1,9 @@
+# Versions used for the published run on Linux and Python 3.14.6
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.9.0
+xgboost==3.4.1
+joblib==1.5.3
+matplotlib==3.10.8
+streamlit==1.66.0
+pytest==9.1.1
